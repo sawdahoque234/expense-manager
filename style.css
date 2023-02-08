@@ -1,0 +1,12 @@
+#addfriendfrom {
+  visibility: hidden;
+}
+#addfriendfrom:target {
+  visibility: visible;
+}
+.close:target {
+  visibility: hidden;
+}
+#Update {
+  display: none;
+}

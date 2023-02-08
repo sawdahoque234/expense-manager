@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Expense Manager Project</title>
+  </head>
+  <body>
+    <h1>Expense Manager</h1>
+    <div>
+      <div>
+        <h4>Add New Items:</h4>
+      </div>
+      <div>
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="cash" id="cash">Cash</option>
+          <option value="bank" id="bank">Bank</option>
+        </select>
+        <div>
+          <label for="addfriend">Add friend:</label>
+          <select id="list"></select>
+          <a href="#addfriendfrom">+</a>
+          <div id="addfriendfrom">
+            <input type="text" id="addfriendinput" required />
+            <button id="addfriendbtn">Add</button>
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+
+        <br />
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <label for="amount">Amount:</label>
+        <input type="number" name="" id="amount" required />
+        <br />
+        <br />
+        <label for="currency">Currency:</label>
+        <select id="currency">
+          <option value="inr">INR</option>
+          <option value="usd">USD</option>
+        </select>
+        <label for="date">Date:</label>
+        <input type="date" name="" id="date" required />
+        <br /><br />
+        <button type="submit" id="Submit" onclick="addData()">
+          Add a new Expense
+        </button>
+        <button type="submit" id="Update">Edit Expense</button>
+      </div>
+
+      <!-- table... -->
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Friends</th>
+            <th>Ammount</th>
+            <th>Currency</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
